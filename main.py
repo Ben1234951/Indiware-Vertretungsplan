@@ -32,7 +32,7 @@ def Discord():
     async def loop():
         now = datetime.now()
         current_time = now.strftime("%H:%M")
-        if "18:00" | "07:30" in current_time:
+        if "18:00" or "07:30" in current_time:
             channel = Discord_client.get_channel(1013376915949760562)
             data_9_5 = plan.get_data(9.5)
             data_8_5 = plan.get_data(8.5)
