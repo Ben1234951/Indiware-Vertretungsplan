@@ -6,7 +6,7 @@ def get_data(Klasse : str):
     options.headless = True
 
     driver = webdriver.Chrome(chrome_options=options)
-    driver.get("https://schueler:sm37721@www.stundenplan24.de/10019573/mobil")
+    driver.get("https://user:password@www.stundenplan24.de/schoolnumber/mobil")
     driver.get("https://www.stundenplan24.de/10019573/mobil/index.html")
 
     driver.execute_script(f"SeiteAKPlanAufrufen('{Klasse}')")
