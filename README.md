@@ -11,4 +11,5 @@ just simply put in youre Discord Bot tokken in the Discord_client.run() and it w
 you also need to have selenium 4.2.0 installed and Discord.py 1.7.3 to let it work fine, if not installed these versions this script will not execute
 
 pip3 install selenium==4.2.0
+
 pip3 install discord.py==1.7.3
