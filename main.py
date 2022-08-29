@@ -32,24 +32,18 @@ def Discord():
         now = datetime.now()
         current_time = now.strftime("%H:%M")
         if "18:00" == current_time:
-            channel = Discord_client.get_channel(1013376915949760562)
-            data_9_5 = plan.get_data(9.5)
-            data_8_5 = plan.get_data(8.5)
-            embed2 = discord.Embed(title="Vertretungsplan der Klasse 8.5", description=f"{data_8_5}", color=0x00ff00)
-            embed1 = discord.Embed(title="Vertretungsplan der Klasse 9.5", description=f"{data_9_5}", color=0x00ff00)
-            await channel.send(embed=embed2)
-            await channel.send(embed=embed1)
+            channel = Discord_client.get_channel("Channel ID where it should be posted")
+            data = plan.get_data("youre class")
+            embed = discord.Embed(title="Vertretungsplan der Klasse[youre class]", description=f"{data}", color=0x00ff00)
+            await channel.send(embed=embed)
         elif "12:50" == current_time:
-            channel = Discord_client.get_channel(1013376915949760562)
-            data_9_5 = plan.get_data(9.5)
-            data_8_5 = plan.get_data(8.5)
-            embed2 = discord.Embed(title="Vertretungsplan der Klasse 8.5", description=f"{data_8_5}", color=0x00ff00)
-            embed1 = discord.Embed(title="Vertretungsplan der Klasse 9.5", description=f"{data_9_5}", color=0x00ff00)
-            await channel.send(embed=embed2)
-            await channel.send(embed=embed1)
+            channel = Discord_client.get_channel("Channel ID where it should be posted")
+            data = plan.get_data("youre class")
+            embed = discord.Embed(title="Vertretungsplan der Klasse[youre class]", description=f"{data}", color=0x00ff00)
+            await channel.send(embed=embed)
         
 
-    Discord_client.run("MTAxMzM3NTc3NTYxNDk4MDEyNw.GE5a5E.41WnEoYeUscEr-SSO4NqRa9NHKGRCYYe5IH2Zs")
+    Discord_client.run("Youre Token Here")
 
 if __name__ == "__main__":
     Discord()
