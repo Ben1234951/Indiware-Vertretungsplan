@@ -37,7 +37,7 @@ def get_data(Klasse : str, id, day_before=None,day_after=None, wie_oft=None):
     return maintem, datum
 
 def write_class(id, Klasse):
-    db.upsert({"Klasse" : Klasse}, User.user_id == id)
+    db.upsert({"Klasse" : Klasse, "user_id" : id}, User.user_id == id)
 
 def read_class(id):
     result = db.get(User.user_id == id)
